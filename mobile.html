@@ -1,0 +1,27 @@
+<html>
+    <script>
+       document.write("Hello World");
+       function validateMobile() {
+        var mobile = document.getElementById("mobile").value;
+        if(mobile.length == 10) {
+            document.getElementById("myDiv").innerHTML = "Mobile number is valid";
+        } else {
+            document.getElementById("myDiv").innerHTML = "Mobile number is invalid";
+        }
+       }
+       function validatealternatemobile() {
+        var mobile = document.getElementById("mobile").value;
+        if(mobile.length == 10) {
+            document.getElementById("myDiv").innerHTML = "alternateMobile number is valid";
+        } else {
+            document.getElementById("myDiv").innerHTML = "alternateMobile number is invalid";
+        }
+       }
+    </script>
+    <body>
+        <input type="text" id="mobile">
+        <input type="text" id="alternatemobile">
+       <button onclick="validateMobile()">Validate Mobile</button>
+       <button onclick="validatealternatemobile()">Validate Alternate Mobile</button>
+       <div id="myDiv"></div>    </body>
+</html>
